@@ -6,6 +6,7 @@ exports.handler = (event, context, callback) => {
   const params = {
     Item: {
       event_id: uuidV4(),
+      name: event.name,
       adminEmail: event.email,
       adminId: event.adminId,
       address: event.address,
