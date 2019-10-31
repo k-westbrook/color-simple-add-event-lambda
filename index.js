@@ -7,7 +7,7 @@ exports.handler = (event, context, callback) => {
     Item: {
       event_id: uuidV4(),
       name: event.name,
-      adminEmail: event.email,
+      adminEmail: event.adminEmail,
       adminId: event.adminId,
       address: event.address,
       city: event.city,
