@@ -7,12 +7,13 @@ exports.handler = (event, context, callback) => {
     Item: {
       event_id: uuidV4(),
       adminEmail: event.email,
+      adminId: event.adminId,
       address: event.address,
       city: event.city,
       state: event.state,
       date: event.date,
       time: event.time,
-      attendess: [{ email: event.email, user_id: event.adminId }]
+      attendess: []
     },
     TableName: "EVENT_DETAILS"
   };
