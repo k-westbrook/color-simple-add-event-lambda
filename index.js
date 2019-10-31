@@ -47,7 +47,7 @@ exports.handler = (event, context, callback) => {
         body: {
 
           message: JSON.stringify('Successful creation in table.'),
-          user: params.Item
+          event: params.Item
         }
 
       };
