@@ -12,7 +12,7 @@ exports.handler = (event, context, callback) => {
       state: event.state,
       date: event.date,
       time: event.time,
-      attendess: [{ email, user_id }]
+      attendess: [{ email: event.email, user_id: event.adminId }]
     },
     TableName: "EVENT_DETAILS"
   };
@@ -52,8 +52,4 @@ exports.handler = (event, context, callback) => {
 
     }
   })
-
-
-
-
 };
