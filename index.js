@@ -14,7 +14,8 @@ exports.handler = (event, context, callback) => {
       state: event.state,
       date: event.date,
       time: event.time,
-      attendess: []
+      attendess: [],
+      comments: event.comments
     },
     TableName: "EVENT_DETAILS"
   };
