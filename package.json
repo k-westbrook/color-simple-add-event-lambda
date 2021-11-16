@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/k-westbrook/color-simple-add-event-lambda#readme",
   "dependencies": {
-    "aws-sdk": "^2.561.0",
+    "aws-sdk": "^2.814.0",
     "uuid": "^3.3.3"
   }
 }
